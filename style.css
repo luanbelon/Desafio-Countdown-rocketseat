@@ -81,11 +81,29 @@ body{
     font-size: 1.3rem;
     font-weight: 200;
     margin: 0;
+    text-align: center;
 }
 
 #date ul li p span{
     font-size: 5rem;
     font-weight: 300;
     color: var(--black);
+}
 
+@media (max-width: 768px) {
+    .flex{ flex-direction: column-reverse; }
+    .container-main{ padding: 1rem;}
+    .container-content div img{ width: 60vw; }
+    .container-content div h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .container-content div p { font-size: .9rem; }
+    .container-content div a {
+        font-weight: 400;
+        padding: .8rem 2rem;
+    }
+    #date { margin: 1.5rem 0; }
+    #date ul li p { font-size: .8rem; }
+    #date ul li p span { font-size: 3rem;}
 }
