@@ -44,7 +44,7 @@ body{
 .container-content{
     width: 90vw;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 9;
     text-align: center;
 }
 
@@ -89,6 +89,85 @@ body{
     font-weight: 300;
     color: var(--black);
 }
+
+#modal-newsletter{
+    display: none;
+
+}
+
+.modal{
+    background: #fff;
+    padding: 2rem;
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal h3{
+    color: var(--purple);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.modal form{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.modal form input{
+    height: 2.4rem;
+    padding: 0.3rem;
+    font-family: poppins;
+    border-radius: 5px;
+}
+
+.modal form input[type="email"]{
+    width: 70%;
+    border: none;
+    background: rgb(235, 235, 235);
+    outline: none;
+}
+
+.modal form input[type="submit"]{
+    width: 28%;
+    background: var(--purple);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+
+.modal #btn-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.modal #btn-close span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #6b63ffa2;
+}
+
+#modal-newsletter.active{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (max-width: 768px) {
     .flex{ flex-direction: column-reverse; }

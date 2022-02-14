@@ -25,12 +25,24 @@
                     </ul>
                 </div>
                 <p>Inscreva-se para saber mais sobre o lançamento</p>
-                <a href="#">Inscreva-se</a>
+                <a href="#" onclick="openModal()">Inscreva-se</a>
             </div>
             <div>
                 <img src="./img/rocket.svg" alt="">
             </div>
         </section>
     </section>
+    <div id="modal-newsletter">
+        <div class="modal">
+            <h3>Inscreva-se para saber de todas as novidades.</h3>
+            <form action="">
+                <input type="email" name="email" id="email">
+                <input type="submit" value="Quero me inscrever" id="submit">    
+            </form>
+            <div id="btn-close">
+                <span onclick="closeModal()">&#10005;</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

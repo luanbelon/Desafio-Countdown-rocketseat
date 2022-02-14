@@ -34,3 +34,14 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+function openModal() {
+  let modal = document.querySelector("#modal-newsletter");
+  modal.classList.add("active");
+}
+
+function closeModal() {
+  let modal = document.querySelector("#modal-newsletter");
+  modal.classList.remove("active");
+}
